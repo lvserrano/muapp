@@ -555,3 +555,37 @@ footer p {
     font-size: 1.5rem;
   }
 }
+/* Custom Scrollbar - Glassmorphism Style */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 6px;
+  border: 1px solid var(--glass-border);
+  transition: all var(--transition-fast);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(45, 55, 72, 0.6);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.2);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: rgba(45, 55, 72, 0.8);
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--glass-bg) var(--bg-primary);
+}
