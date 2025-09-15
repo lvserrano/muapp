@@ -206,6 +206,12 @@ header {
   position: relative;
   overflow: hidden;
 }
+.tool-card a {
+  color: inherit; /* herda a cor do pai */
+  text-decoration: none; /* remove o sublinhado */
+  display: block; /* faz o link ocupar todo o card */
+  height: 100%; /* garante clique no card todo */
+}
 
 .tool-card::before {
   content: "";
